@@ -1,0 +1,171 @@
+@import url('https://use.typekit.net/hfo5jea.css');
+
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:root {
+	--text-color: #30242A;
+	--background-color: #e7e7e8;
+	--link-color: #30242A;
+	--link-hover-color: #4856DF;
+	--sm-mq: 320px;
+	--md-mq: 768px;
+	--lg-mq: 1068px;
+}
+
+body {
+	margin: 0;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 500;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	color: #30242A;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+}
+
+h3 {
+	font-weight: normal;
+}
+
+h2.projects--heading {
+	grid-column: 4 / 9;
+	padding: 5% 0 0 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--link-color);
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: var(--link-hover-color);
+	outline: none;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	display: flow-root;
+}
+
+li a {
+	color: #30242A;
+}
+
+sup {
+	font-size: 11px;
+	vertical-align: 2px;
+}
+
+.cursive {
+	font-family: hwt-mardell, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.wrapper {
+	padding: 5% 10%;
+}
+
+.grid--layout {
+	/* border: 1px solid red; */
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(7, 2fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap: 2.5%;
+	grid-auto-flow: dense;
+}
+
+header {
+	grid-column: 1 / 9;
+	/* border: 1px solid green; */
+}
+
+svg {
+	grid-column: 1 / 9;
+	position: static;
+	/* border: 1px solid blue; */
+}
+
+section.about {
+	grid-column: 1 / 9;
+	/* border: 1px solid purple; */
+}
+
+.projects--section {
+	grid-column: 4 / 9;
+}
+
+section.project {
+	padding: 5% 0;
+}
+
+/* .project--one__svg {
+	grid-column: 8 / 9;
+} */
+
+/* .project--two {
+	grid-column: 4 / 9;
+} */
+
+hr {
+	grid-column: 1 / 2;
+}
+
+/* .content--title__alt {
+	grid-column: 1 / 3;
+} */
+
+footer {
+	grid-column: 1 / 9;
+	color: #30242A;
+	text-align: right;
+	padding: 5% 0;
+	/* border: 1px solid lime; */
+}
+
+@media screen and (min-width: 768px) {
+	svg {
+		/* grid-column: 1 / 9; */
+		position: fixed;
+		width: 25%;
+		bottom: -1px;
+		/* left: 0;
+		top: 100vh;
+		/* border: 1px solid blue; */
+	}
+	
+	section.about {
+		grid-column: 4 / 9;
+		/* border: 1px solid purple; */
+	}
+
+	footer {
+		grid-column: 1 / 9;
+		color: #30242A;
+		text-align: right;
+		/* border: 1px solid lime; */
+	}
+}
