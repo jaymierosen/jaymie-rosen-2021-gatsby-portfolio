@@ -1,23 +1,25 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 // Components
 import JaymieSvg from "../components/jaymieSvg";
 
 const Header = ({ siteTitle }) => (
   <header>
-    <h1 className="cursive">JR</h1>
+    <h1 className="logo">JR</h1>
+    <h2>Jaymie Rosen</h2>
+    <h3>Front-End Developer</h3>
     <nav>
       <ul>
         <li>
-          <a target="_blank" href="https://www.linkedin.com/in/jaymierosen/">
-            linkedin
+          <a href="https://www.linkedin.com/in/jaymierosen/" target="_blank" rel="noreferrer">
+            Linkedin
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://github.com/jaymierosen">
-            github
+          <a href="https://github.com/jaymierosen" target="_blank" rel="noreferrer">
+            Github
           </a>
         </li>
         <li>

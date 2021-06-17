@@ -14,62 +14,38 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
       <main className="wrapper">
         <div className="grid--layout">
-          <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+          <Header siteTitle={data.site.siteMetadata?.title || `Jaymie Rosen`} />
           <section className="about">
-            <h2 className="content__title">new website</h2>
-            <h3 className="content__desc">coming soon</h3>
+            <h2>Hello, there!</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum obcaecati impedit corrupti iure illo veniam
-              reprehenderit rem sint ab rerum! Minus distinctio asperiores
-              aliquam laborum quia temporibus reprehenderit fuga blanditiis.
+              I'm Jaymie, and I'm currently looking for my next front-end or full-stack web development role.
             </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum obcaecati impedit corrupti iure illo veniam
-              reprehenderit rem sint ab rerum! Minus distinctio asperiores
-              aliquam laborum quia temporibus reprehenderit fuga blanditiis.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum obcaecati impedit corrupti iure illo veniam
-              reprehenderit rem sint ab rerum! Minus distinctio asperiores
-              aliquam laborum quia temporibus reprehenderit fuga blanditiis.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptatum obcaecati impedit corrupti iure illo veniam
-              reprehenderit rem sint ab rerum! Minus distinctio asperiores
-              aliquam laborum quia temporibus reprehenderit fuga blanditiis.
-            </p>
+            <a href="https://drive.google.com/file/d/1iNO5Oqh1VPwaWzh5ZJQi2hdB03VE6Ckz/view?usp=sharing" target="_blank" rel="noreferrer">
+              <button>Download my resume</button>
+            </a>
           </section>
-          <h2 className="projects--heading">projects</h2>
           <section className="projects--section">
+            <h2 className="projects--heading">Projects</h2>
             <section className="project project--one">
               <h3 className="content__title">
-                pantone<sup>&reg;</sup> color of the year
+                Pantone<sup className="content__title--sup">&reg;</sup> Color of the Year
               </h3>
-              <h4 className="content__desc">react</h4>
+              <h4 className="content__desc">Built with React</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
-                quasi minus, aperiam aliquam nihil doloribus pariatur quam
-                temporibus.
+                An interactive retrospective of each Pantone<sup>&reg;</sup> Color of the Year, from 2000 to 2021.
               </p>
-              <a href="#" target="_blank">
-                link to project
+              <a href="https://pantonecolors.netlify.app/" target="_blank" rel="noreferrer">
+                <button>Click here to view project</button>
               </a>
             </section>
-            <section className="project project--two">
-              <h2>more to come...</h2>
-            </section>
           </section>
-          <footer>&copy; {new Date().getFullYear()}</footer>
+          <footer>&copy; {new Date().getFullYear()} | Built with Gatsby</footer>
         </div>
       </main>
     </>

@@ -214,7 +214,7 @@ export default class jaymieSvg extends Component {
               strokeLinejoin="round"
             ></path>
             <circle
-              id="Oval"
+              id="sun"
               fill="#F5EBDD"
               cx="618"
               cy="151.5"
