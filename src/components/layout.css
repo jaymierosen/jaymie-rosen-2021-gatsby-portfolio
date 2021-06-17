@@ -70,6 +70,7 @@ a:focus {
 
 ul {
 	list-style: none;
+	margin: 0;
 	padding-left: 0;
 	display: flow-root;
 }
@@ -103,6 +104,14 @@ sup.content__title--sup {
 	font-style: normal;
 }
 
+header {
+	grid-column: 1 / 2;
+}
+
+nav {
+	grid-column: 3 / 9;
+}
+
 .wrapper {
 	padding: 5% 10%;
 }
@@ -113,10 +122,6 @@ sup.content__title--sup {
 	grid-template-columns: repeat(7, 2fr);
 	grid-template-rows: repeat(1, 1fr);
 	grid-gap: 2.5%;
-}
-
-header {
-	grid-column: 1 / 9;
 }
 
 svg {
@@ -151,6 +156,14 @@ footer {
 }
 
 @media screen and (min-width: 1025px) {
+	header {
+		grid-column: 1 / 4;
+	}
+	
+	nav {
+		grid-column: 4 / 9;
+	}
+
 	svg {
 		position: fixed;
 		width: 25%;

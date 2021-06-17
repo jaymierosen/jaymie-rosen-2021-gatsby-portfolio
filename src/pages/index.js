@@ -11,6 +11,6 @@ const IndexPage = () => (
     <p>
     </p>
   </Layout>
-)
+);
 
 export default IndexPage;
