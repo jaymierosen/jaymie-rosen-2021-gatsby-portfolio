@@ -98,6 +98,18 @@ sup.content__title--sup {
 	vertical-align: 2px;
 }
 
+.wrapper {
+	padding: 5%;
+}
+
+.grid--layout {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(7, 2fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap: 2.5%;
+}
+
 .logo {
 	font-family: hwt-mardell, sans-serif;
 	font-weight: 400;
@@ -112,22 +124,10 @@ nav {
 	grid-column: 3 / 9;
 }
 
-.wrapper {
-	padding: 5% 10%;
-}
-
-.grid--layout {
-	position: relative;
-	display: grid;
-	grid-template-columns: repeat(7, 2fr);
-	grid-template-rows: repeat(1, 1fr);
-	grid-gap: 2.5%;
-}
-
 svg {
 	grid-column: 1 / 9;
 	position: static;
-	width: 75%;
+	width: fit-content;
 }
 
 section.about {
@@ -166,7 +166,7 @@ footer {
 
 	svg {
 		position: fixed;
-		width: 25%;
+		width: 35%;
 		bottom: 0px;
 	}
 
