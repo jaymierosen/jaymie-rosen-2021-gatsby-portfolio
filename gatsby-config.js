@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Jaymie Rosen`,
-    description: `Jaymie Rosen's portfolio website`,
-    author: `Jaymie Rosen`,
+    title: "Jaymie Rosen",
+    titleTemplate: "Jaymie Rosen",
+    description:
+      "Jaymie Rosen's personal website",
+    url: "https://jaymierosen.gatsbyjs.io", // No trailing slash allowed!
+    image: "", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@jaymierosen",
   },
   plugins: [
     `gatsby-plugin-sass`,
