@@ -9,12 +9,17 @@
 
 :root {
 	--text-color: #30242A;
-	--background-color: #e7e7e8;
+	--background-color: #fff;
 	--link-color: #30242A;
 	--link-hover-color: #4856DF;
-	--sm-mq: 320px;
-	--md-mq: 768px;
-	--lg-mq: 1068px;
+	--base-font-size: 12px;
+  --fluid-typography-ratio: 0.9;
+  --rem: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 0.75vw);
+  font-size: var(--rem);
+}
+
+::selection {
+	background: rgb(255, 190, 33);
 }
 
 body {
@@ -23,6 +28,7 @@ body {
 	font-style: normal;
 	color: var(--text-color);
 	background-color: var(--background-color);
+	line-height: 1.6em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -33,15 +39,15 @@ h3,
 h4 {
 	margin: 0;
 	font-style: normal;
-	font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+h1,
+h2 {
+	letter-spacing: -1px;
 }
 
 h1 {
 	font-weight: 900;
-}
-
-h2 {
-	font-weight: 700;
 }
 
 h2 {
@@ -76,8 +82,7 @@ ul {
 }
 
 p, li {
-	line-height: 24px;
-	font-weight: 200;
+	font-weight: 400;
 }
 
 button {
@@ -85,17 +90,15 @@ button {
 	border: none;
 	color: var(--background-color);
 	padding: 10px;
+	font-size: var(--base-font-size) * 2;
 	cursor: pointer;
+}
+button:hover {
+	background: var(--link-color);
 }
 
 sup {
-	font-size: 9px;
 	vertical-align: 3px;
-}
-
-sup.content__title--sup {
-	font-size: 15px;
-	vertical-align: 2px;
 }
 
 .wrapper {
@@ -114,6 +117,7 @@ sup.content__title--sup {
 	font-family: hwt-mardell, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	margin: 0 0 1% 0;
 }
 
 header {
@@ -166,8 +170,8 @@ footer {
 
 	svg {
 		position: fixed;
-		width: 35%;
-		bottom: 0px;
+		width: 30%;
+		bottom: 0;
 	}
 
 	section.about {

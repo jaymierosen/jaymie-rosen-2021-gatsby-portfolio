@@ -7,9 +7,7 @@ import Seo from "../components/seo";
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Jaymie Rosen" />
-    <p>
-    </p>
+    <Seo description="Jaymie Rosen" title="Jaymie Rosen" />
   </Layout>
 );
 
