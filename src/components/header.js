@@ -8,7 +8,7 @@ import downloadFile from '../assets/jaymie-rosen-resume.pdf';
 const Header = ({ siteTitle }) => (
   <>
     <header>
-      <img className="hero" src={hero} />
+      <img alt="Laptop with stickers on it" className="hero" src={hero} />
       <h1>Jaymie Rosen</h1>
       <h2>Front-End Developer</h2>
       <h3>New website coming soon</h3>
@@ -51,7 +51,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: "Jaymie Rosen",
 }
 
 export default Header

@@ -9,7 +9,6 @@ const Seo = ({ title, description, image, article }) => {
   const { site } = useStaticQuery(query)
 
   const {
-    defaultTitle,
     titleTemplate,
     defaultDescription,
     siteUrl,
@@ -18,7 +17,8 @@ const Seo = ({ title, description, image, article }) => {
   } = site.siteMetadata
 
   const seo = {
-    title: title,
+    title: "Jaymie Rosen",
+    defaultDescription: defaultDescription,
     description: description,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
