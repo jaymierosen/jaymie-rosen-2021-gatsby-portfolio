@@ -59,7 +59,7 @@ Seo.propTypes = {
 }
 
 Seo.defaultProps = {
-  title: null,
+  title: "Jaymie Rosen",
   description: null,
   image: null,
   article: false,
