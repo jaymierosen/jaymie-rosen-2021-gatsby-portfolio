@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[678],{7704:function(e,t,a){"use strict";a.r(t);var n=a(7294),r=a(2936),s=a(7487);t.default=function(){return n.createElement(r.Z,null,n.createElement(s.Z,{description:"Jaymie Rosen",title:"Jaymie Rosen"}))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-96c179cb4c88475323ad.js.map
